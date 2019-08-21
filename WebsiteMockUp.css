@@ -13,10 +13,8 @@ body {
   right: 0px;
   z-index: 10;
   background-color: cornflowerblue;
-}
-
-.splash-img {
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .leftHalf {
@@ -112,7 +110,7 @@ nav ul li{
 }
 
 nav > ul > li > a{
-  color: #aaa;
+  color: wheat;
   display: block;
   line-height: 2em;
   padding: 0.5em 1em;
@@ -130,7 +128,15 @@ nav > ul > li > a{
   margin: 10px 15px 10px 20px;
 }
 
-.bg-div{
-  align-items: center;
+.nav-div{
   overflow: hidden;
+}
+
+.content {
+  color: white;
+  margin: 30% 0 0 25%;
+}
+
+.line {
+  margin-right: 10%;
 }
