@@ -5,22 +5,37 @@ body {
   background-repeat: no-repeat;
 
 }
+.splash {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+  background-color: cornflowerblue;
+}
+
+.splash-img {
+  align-items: center;
+}
+
 .leftHalf {
-  background: url(./assets/bgImage.jpg);
+  background: #3285a8;
   width: 50%;
   position: absolute;
   left: 0px;
-  height: 100%;
+  height: 650px;
 }
 
 .rightHalf {
-  background: url(./assets/cyclegirl2.jpg);
-  width: 50%;
-  position: absolute;
-  right: 0px;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 50%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
 }
 
 .logo {
@@ -107,9 +122,15 @@ nav > ul > li > a{
 .logo-img{
   float: left;
   position: relative;
-  margin: 10px 15px 15px 10px;
+  margin: 20px 15px 10px 25px;
+  width: 100px;
+  height: 30px
 }
+.nav-list {
+  margin: 10px 15px 10px 20px;
+}
+
 .bg-div{
- background:#333;
- overflow: hidden;
+  align-items: center;
+  overflow: hidden;
 }
