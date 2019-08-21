@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="./WebsiteMockUp.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./WebsiteMockUp.css">
+    <link rel="stylesheet" href="WebsiteMockUp.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            let count = 0;
+            const wordsArray = ["Single Application", "Verified Avenues", "Trusted Advisors", "Informed Decisions"];
+            setInterval(function () {
+                count++;
+                $("#myText").fadeOut(400, function () {
+                    $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+                });
+            }, 4000);
+        });
+    </script>
 
 </head>
 <body>
@@ -23,15 +38,22 @@
         </div>
         <div class="content">
             <h3>Simplify your wealt management with</h3>
-            <h1>Informed Decisions</h1>
+            <h1 id="myText">Single Application</h1>
             <p>How does managing and enjoying your wealth wisely sound to you? <br/>
                 Sign-up and get an exlusive preview of the future of wealth management.</p>
             <p>Enter your e-mail address</p>
+
             <hr class="line"/>
         </div>
     </div>
-    <video autoplay muted loop class="rightHalf">
-        <source src="assets/videos/video.mp4" type="video/mp4" >
-    </video>
+    <div>
+        <a id="text" href="#">Get Early Access</a>
+        <video autoplay muted loop class="rightHalf">
+            <source src="assets/videos/video.mp4" type="video/mp4">
+        </video>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </div>
 </body>
 </html>

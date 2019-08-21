@@ -22,11 +22,11 @@ body {
   width: 50%;
   position: absolute;
   left: 0px;
-  height: 650px;
+  height: 100%;
 }
 
 .rightHalf {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 50%;
@@ -34,6 +34,53 @@ body {
   width: auto;
   height: auto;
   z-index: -100;
+}
+
+.fa {
+  position: absolute;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  float: left;
+  overflow: auto;
+
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  bottom: 0;
+  right: 135px;
+  color: white;
+}
+
+.fa-twitter {
+  bottom: 0;
+  right: 80px;
+  color: white;
+  float: left;
+}
+
+.fa-linkedin {
+  bottom: 0;
+  right: 25px;
+  color: white;
+}
+
+#text {
+  position: absolute;
+  text-decoration: none;
+  margin: 30px 30px;
+  right: 0;
+  color: white;
+  border: 1px solid white;
+  padding: 7px;
+
 }
 
 .logo {
@@ -140,3 +187,4 @@ nav > ul > li > a{
 .line {
   margin-right: 10%;
 }
+
