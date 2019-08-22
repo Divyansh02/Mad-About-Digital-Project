@@ -3,10 +3,25 @@ body {
   padding: 0;
   background-size: 50%;
   background-repeat: no-repeat;
-
+height: 100%;
 }
+html {
+  height: 100%;
+}
+.splash {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+}
+
 .leftHalf {
-  background: url(./assets/bgImage.jpg);
+  background: #3285a8;
   width: 50%;
   position: absolute;
   left: 0px;
@@ -14,13 +29,70 @@ body {
 }
 
 .rightHalf {
-  background: url(./assets/cyclegirl2.jpg);
-  width: 50%;
+  position: fixed;
+  width: 100%;
+  z-index: -100;
+  margin-top: -122px;
+  padding-bottom: 900px;
+  background-size: contain;
+  background-position: center;
+}
+
+.fa {
   position: absolute;
-  right: 0px;
-  height: 100%;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  float: left;
+  overflow: auto;
+
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.dot {
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  margin-left: 50%;
+  background-size: contain;
+  margin-top: auto;
   background-repeat: no-repeat;
-  background-size: cover
+  height: 100%;
+  background-position: bottom;
+}
+.fa-facebook {
+  bottom: 0;
+  right: 135px;
+  color: white;
+}
+
+.fa-twitter {
+  bottom: 0;
+  right: 80px;
+  color: white;
+  float: left;
+}
+
+.fa-linkedin {
+  bottom: 0;
+  right: 25px;
+  color: white;
+}
+
+#text {
+  position: absolute;
+  text-decoration: none;
+  margin: 30px 30px;
+  right: 0;
+  color: white;
+  border: 1px solid white;
+  padding: 7px;
+
 }
 
 .logo {
@@ -97,7 +169,7 @@ nav ul li{
 }
 
 nav > ul > li > a{
-  color: #aaa;
+  color: wheat;
   display: block;
   line-height: 2em;
   padding: 0.5em 1em;
@@ -107,9 +179,24 @@ nav > ul > li > a{
 .logo-img{
   float: left;
   position: relative;
-  margin: 10px 15px 15px 10px;
+  margin: 20px 15px 10px 25px;
+  width: 100px;
+  height: 30px
 }
-.bg-div{
- background:#333;
- overflow: hidden;
+.nav-list {
+  margin: 10px 15px 10px 20px;
 }
+
+.nav-div{
+  overflow: hidden;
+}
+
+.content {
+  color: white;
+  margin: 30% 0 0 25%;
+}
+
+.line {
+  margin-right: 10%;
+}
+
