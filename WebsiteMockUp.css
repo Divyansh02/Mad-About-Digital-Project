@@ -21,6 +21,13 @@ html {
     justify-content: center;
 }
 
+.styleImage{
+    width: 194px;
+    height: 130px;
+    position: absolute;
+    top: 250px;
+}
+
 .leftHalf {
     background: #3285a8;
     width: 50%;
