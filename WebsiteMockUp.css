@@ -28,6 +28,14 @@ html {
     top: 250px;
 }
 
+.styleCopyright{
+    position: relative;
+    left: 158px;
+    top: 151px;
+    color:wheat
+}
+
+
 .leftHalf {
     background: #3285a8;
     width: 50%;
